@@ -1,0 +1,77 @@
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+
+# Session files
+*.session
+*.session-journal
+.sessions/
+telethon_sessions/
+
+# Logs
+logs/
+*.log
+
+# Broadcast data
+broadcast_control/
+account_histories/
+broadcast_stats.json
+broadcast_locks.json
+account_names.json
+
+# History files
+*_sent_history.json
+*_pending_retry.json
+*_failed_users.json
+history.json
+retry.json
+failed.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backups
+*.backup
+*.backup_*
+*.bak
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
