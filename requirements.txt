@@ -4,8 +4,7 @@ python-dotenv==1.0.0
 telethon==1.34.0
 
 # Performance and security
-aiofiles==23.2.0
-# cryptg==0.4.0  # Закомментировано - проблемы с установкой на Windows, не критично
+aiofiles~=23.2.1
 
 # Future database support (optional)
 # asyncpg==0.29.0
