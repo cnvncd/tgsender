@@ -347,7 +347,12 @@ class BroadcastEngine:
         self, message: str, disable_notification: bool = False
     ) -> None:
         """Send status notification to bot chat"""
-        chat_ids = [self.config.BOT_CHAT_ID, self.config.ADMIN_PROGRESS_CHAT_ID]
+        # Use set to avoid duplicate chat IDs
+        chat_ids = set()
+        if self.config.BOT_CHAT_ID:
+            chat_ids.add(self.config.BOT_CHAT_ID)
+        if self.config.ADMIN_PROGRESS_CHAT_ID:
+            chat_ids.add(self.config.ADMIN_PROGRESS_CHAT_ID)
 
         for chat_id in chat_ids:
             if chat_id and self.config.BOT_TOKEN:
